@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Poppins:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --font-manrope: "Manrope", sans-serif;
+    --font-poppins: "Poppins", sans-serif;
+    --font-inter: "Inter", sans-serif;
+
+    --color-main-purple: #6C5FBC;
+    --color-gray-6060: #606060;
+
+    --breakpoint-article: 850px;
+    --breakpoint-minmob: 410px;
+}
+
+.container-web {
+    @apply max-w-7xl w-full my-0 mx-auto px-7;
+}
+
+.point:before {
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: 0;
+    width: 7px;
+    height: 7px;
+    background-color: gray;
+    border-radius: 100%;
+
+
+}
+
+.point2:before {
+    content: "";
+    position: absolute;
+    top: 105px;
+    left: 0;
+    width: 7px;
+    height: 7px;
+    background-color: gray;
+    border-radius: 100%;
+
+}
+
+.point3:before {
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 7px;
+    height: 7px;
+    background-color: gray;
+    border-radius: 100%;
+}
+
+.backgroundShadow {
+    box-shadow: 6px 71px 36px 0 rgba(229, 229, 229, 0.7);
+}
+
+.backgroundShadow2 {
+    box-shadow: 7px 82px 41px 0 rgba(229, 229, 229, 0.7);
+}
+
+.bg {
+    background: url("/img/PurpleBg.jpg");
+}

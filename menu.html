@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dist/output.css">
+</head>
+
+<body class="font-poppins overflow-x-hidden">
+    <header>
+        <div class="container-web pt-12 flex items-center justify-between">
+            <div class="flex items-center gap-27">
+                <a href="index.html" class="flex items-center gap-3">
+                    <img src="img/ico/Logo.svg" alt="logo" class="w-8 h-7.5 lg:w-11 lg:h-10">
+                    <h2 class=" font-semibold text-main-purple text-[15px] lg:text-[18px]">eatly</h2>
+                </a>
+                <nav class="md:flex gap-13 text-[13px] lg:text-[18px] hidden">
+                    <a href="menu.html" class="font-inter font-medium text-main-purple">Menu</a>
+                    <a href="blog.html" class="font-inter font-medium text-gray-6060">Blog</a>
+                    <a href="pricing.html" class="font-inter font-medium text-gray-6060">Pricing</a>
+                    <a href="contact.html" class="font-inter font-medium text-gray-6060">Contact</a>
+                </nav>
+            </div>
+            <div class="hidden md:flex gap-2">
+                <a href=""
+                    class="px-4.5 lg:px-6 py-4 font-inter font-bold text-gray-6060 text-[15px] lg:text-[18px]">Login</a>
+                <a href=""
+                    class="px-4.5 lg:px-6 py-4 font-inter font-bold bg-main-purple text-white rounded-2xl text-[15px] lg:text-[18px]">Sign
+                    up</a>
+            </div>
+            <div class="md:hidden block">
+                <img src="/img/ico/hamburger.png" alt="hamburger" class="w-8 h-6">
+            </div>
+        </div>
+        <div class="max-w-7xl h-px bg-gray-300 mx-auto mt-6"></div>
+    </header>
+    <main>
+        <section class="pt-25">
+            <div class="container-web flex relative lg:gap-28 gap-0 lg:flex-row flex-col">
+                <div class="flex flex-col gap-35 w-full min-w-0">
+                    <div class="w-full relative h-[180px] lg:h-65 rounded-2xl overflow-hidden">
+                        <img src="/img/PurpleBg.jpg" alt="" class="w-full h-full object-cover">
+                        <h2
+                            class="font-extrabold text-white text-[45px] md:text-[53px] lg:text-[75px] absolute top-5 left-13 lg:top-9 lg:left-16">
+                            50% OFF</h2>
+                        <h2
+                            class="font-extrabold text-[#7C6FCD] text-[50px] md:text-[62px] lg:text-[82px] absolute top-17 left-13 lg:top-24 lg:left-16">
+                            WEEKEND</h2>
+                    </div>
+                    <div class="relative flex flex-col gap-9">
+                        <input type="search" placeholder="Search"
+                            class="flex-1 w-full px-23 py-6 text-[15px] lg:text-[21px] text-gray-500 bg-[#EDEDED] border-none outline-none placeholder:text-gray-400 rounded-2xl" />
+                        <img src="img/ico/search.svg" alt="" class="w-[25px] h-[25px] absolute top-6 left-10 lg:left-8">
+                        <div
+                            class="w-full h-[53px] lg:h-[75px] flex rounded-[20px] overflow-hidden border-2 border-main-purple text-[14px] lg:text-[20px]">
+                            <input type="radio" name="tab" id="food" class="hidden peer/food" checked>
+                            <label for="food"
+                                class="flex-1 flex items-center justify-center cursor-pointer text-main-purple bg-white peer-checked/food:bg-main-purple peer-checked/food:text-white transition-all">
+                                Food
+                            </label>
+                            <input type="radio" name="tab" id="rest" class="hidden peer/rest">
+                            <label for="rest"
+                                class="flex-1 flex items-center justify-center cursor-pointer text-main-purple bg-white peer-checked/rest:bg-main-purple peer-checked/rest:text-white transition-all">
+                                Resturent
+                            </label>
+                        </div>
+                    </div>
+
+                    <img src="img/dishwithoutbg.png" alt="dish"
+                        class="w-[130px] h-[130px] sm:w-[180px] sm:h-[180px] lg:w-[256px] lg:h-[256px] absolute bottom-50 sm:bottom-60 right-10 sm:right-30 md:right-50 lg:right-110 pointer-events-none">
+                    <img src="img/ico/light.svg" alt="light"
+                        class="hidden lg:block absolute -top-7 right-95 rotate-200 pointer-events-none">
+                </div>
+
+                <div
+                    class="order-first lg:order-last w-full lg:w-[290px] xl:w-[320px] shrink-0 px-6 py-8 flex flex-col gap-6 shadowChoicer rounded-2xl">
+
+                    <h2 class="font-semibold text-[15px] lg:text-[22px]">Category</h2>
+                    <div class="flex gap-3.5">
+
+                        <input type="radio" name="food" id="pizza" class="hidden peer/pizza">
+                        <label for="pizza"
+                            class="flex flex-col p-4 rounded-2xl gap-4 w-[50px] sm:w-[60px] md:w-[70px] lg:w-13 h-24 shrink-0 items-center justify-between cursor-pointer bg-[#FFF0C8] peer-checked/pizza:ring-4 peer-checked/pizza:ring-[#FFC635] peer-checked/pizza:scale-105 transition-all duration-200">
+                            <img src="/img/ico/Pizza.svg" class="w-full h-full object-contain">
+                            <p class="text-[#FFC635] text-[8px] lg:text-[12px]">Pizza</p>
+                        </label>
+
+                        <input type="radio" name="food" id="asian" class="hidden peer/asian" checked>
+                        <label for="asian"
+                            class="flex flex-col p-4 rounded-2xl gap-4 w-[50px] sm:w-[60px] md:w-[70px] lg:w-13 h-24 shrink-0 items-center justify-between cursor-pointer bg-[#F7C5BA] peer-checked/asian:ring-4 peer-checked/asian:ring-[#FB471D] peer-checked/asian:scale-105 transition-all duration-200">
+                            <img src="/img/ico/Hotdog.svg" class="w-full h-full object-contain">
+                            <p class="text-[#FB471D] text-[12px]">Asian</p>
+                        </label>
+
+                        <input type="radio" name="food" id="donat" class="hidden peer/donat">
+                        <label for="donat"
+                            class="flex flex-col p-4 rounded-2xl gap-4 w-[50px] sm:w-[60px] md:w-[70px] lg:w-13 h-24 shrink-0 items-center justify-between cursor-pointer bg-[#FFF0C8] peer-checked/donat:ring-4 peer-checked/donat:ring-[#FFC635] peer-checked/donat:scale-105 transition-all duration-200">
+                            <img src="/img/ico/Doughnut.svg" class="w-full h-full object-contain">
+                            <p class="text-[#FFC635] text-[12px]">Donat</p>
+                        </label>
+
+                        <input type="radio" name="food" id="ice" class="hidden peer/ice">
+                        <label for="ice"
+                            class="flex flex-col p-4 rounded-2xl gap-3 w-[50px] sm:w-[60px] md:w-[70px] lg:w-13 h-24 shrink-0 items-center justify-between cursor-pointer bg-[#5A85FF] peer-checked/ice:ring-4 peer-checked/ice:ring-[#002073] peer-checked/ice:scale-105 transition-all duration-200">
+                            <img src="/img/ico/Icecream.svg" class="w-[22px] h-[41px] object-contain">
+                            <p class="text-[#002073] text-[12px]">Ice</p>
+                        </label>
+
+                    </div>
+
+                    <h2 class="font-semibold text-[15px] lg:text-[22px]">Sort By</h2>
+                    <div class="flex justify-between items-start">
+                        <div class="flex flex-col gap-2">
+                            <input type="radio" name="filter" id="rec" class="hidden peer/rec" checked>
+                            <label for="rec"
+                                class="cursor-pointer font-medium text-[13px] lg:text-[15px] opacity-70 text-gray-600 peer-checked/rec:text-main-purple peer-checked/rec:opacity-100 transition-all duration-200">
+                                Recomended
+                            </label>
+                            <input type="radio" name="filter" id="popular" class="hidden peer/popular">
+                            <label for="popular"
+                                class="cursor-pointer font-medium text-[13px] lg:text-[15px] opacity-70 text-gray-600 peer-checked/popular:text-main-purple peer-checked/popular:opacity-100 transition-all duration-200">
+                                Most Popular
+                            </label>
+                        </div>
+                        <input type="radio" name="filter" id="fast" class="hidden peer/fast">
+                        <label for="fast"
+                            class="cursor-pointer font-medium text-[13px] lg:text-[15px] text-gray-600 opacity-70 peer-checked/fast:text-main-purple peer-checked/fast:opacity-100 transition-all duration-200">
+                            Fast Delivery
+                        </label>
+                    </div>
+
+                    <h2 class="font-semibold text-[15px] lg:text-[22px]">Price</h2>
+                    <div class="w-full">
+                        <input type="range" min="0" max="1000" value="25" class="slider w-full bg-[#6C5FBC]">
+                        <div class="flex justify-between text-gray-400 text-[11px] mt-3 font-medium">
+                            <span>$0</span>
+                            <span>$25</span>
+                            <span>$50</span>
+                            <span>$100</span>
+                            <span>$500</span>
+                            <span>$1000</span>
+                        </div>
+                    </div>
+
+                    <a href="#!"
+                        class="py-4.5 px-8 bg-main-purple text-white rounded-2xl text-center mt-8 text-[14px]">Apply</a>
+                </div>
+
+            </div>
+        </section>
+        <section class="pt-25">
+            <div class="container-web flex flex-col items-center relative">
+                <h2 class="font-semibold text-[32px] lg:text-[45px] text-center">Our Top <span
+                        class="text-main-purple">Restaurants</span></h2>
+                <div class="flex md:flex-row flex-col gap-8 pt-18">
+                    <a href="restaurant.html" class="hover:scale-105 transition">
+                        <div class="flex flex-col max-w-100 rounded-3xl overflow-hidden backgroundShadow relative">
+                            <img src="img/chicken.jpg" alt="chicken" class="w-full h-full">
+                            <div class="px-5 lg:px-8 py-2 lg:py-4">
+                                <div class="px-3 py-1 bg-[#F7EDD0] rounded-[5px] max-w-14 lg:max-w-18.5">
+                                    <p class="text-[9px] lg:text-[13px] text-[#DAA31A]">Healthy</p>
+                                </div>
+                                <h3 class="font-semibold text-[18px] lg:text-[26px]">The Chicken King</h3>
+                                <div class="flex gap-2 items-center">
+                                    <p class="text-gray-6060 opacity-75 text-[14px] lg:text-[16px]">24min</p>
+                                    <div class="flex items-center justify-center">
+                                        <img src="img/ico/purplestar.svg" alt="star" class="w-1/2 h-1/2">
+                                        <p class="text-gray-6060 opacity-75 text-[14px] lg:text-[16px]">4.8</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="absolute bottom-3 lg:bottom-5 right-4 lg:right-3 px-2.5 py-2 bg-[#dbd9ee] rounded-3xl">
+                                <img src="img/ico/mark.svg" alt="mark" class="w-2.5 h-3.5 lg:w-4 lg:h-5">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="restaurant.html" class="hover:scale-105 transition">
+                        <div class="flex flex-col max-w-100 rounded-3xl overflow-hidden backgroundShadow relative">
+                            <img src="img/burger.jpg" alt="burger" class="w-full h-full">
+                            <div class="px-5 lg:px-8 py-2 lg:py-4">
+                                <div class="px-3 py-1 bg-[#F7C5BA] rounded-[5px] max-w-16 lg:max-w-20">
+                                    <p class="text-[9px] lg:text-[13px] text-[#FB471D]">Trending</p>
+                                </div>
+                                <h3 class="font-semibold text-[18px] lg:text-[26px]">The Burger King</h3>
+                                <div class="flex gap-2 items-center">
+                                    <p class="text-gray-6060 opacity-75 text-[14px] lg:text-[16px]">24min</p>
+                                    <div class="flex items-center justify-center">
+                                        <img src="img/ico/purplestar.svg" alt="" class="w-[50%] h-[50%]">
+                                        <p class="text-gray-6060 opacity-75 text-[14px] lg:text-[16px]">4.9</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="absolute bottom-3 lg:bottom-5 right-4 lg:right-3 px-2.5 py-2 bg-[#dbd9ee] rounded-3xl">
+                                <img src="img/ico/mark.svg" alt="mark" class="w-2.5 h-3.5 lg:w-4 lg:h-5">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="restaurant.html" class="hover:scale-105 transition">
+                        <div class="flex flex-col max-w-100 rounded-3xl overflow-hidden backgroundShadow relative">
+                            <img src="img/chicken.jpg" alt="chicken" class="w-full h-full">
+                            <div class="px-5 lg:px-8 py-2 lg:py-4">
+                                <div class="px-3 py-1 bg-[#F7EDD0] rounded-[5px] max-w-15 lg:max-w-18.5">
+                                    <p class="text-[9px] lg:text-[13px] text-[#DAA31A]">Healthy</p>
+                                </div>
+                                <h3 class="font-semibold text-[18px] lg:text-[26px]">The Chicken King</h3>
+                                <div class="flex gap-2 items-center">
+                                    <p class="text-gray-6060 opacity-75 text-[14px] lg:text-[16px]">24min</p>
+                                    <div class="flex items-center justify-center">
+                                        <img src="img/ico/purplestar.svg" alt="">
+                                        <p class="text-gray-6060 opacity-75 text-[14px] lg:text-[16px]">4.8</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="absolute bottom-3 lg:bottom-5 right-4 lg:right-3 px-2.5 py-2 bg-[#dbd9ee] rounded-3xl">
+                                <img src="img/ico/mark.svg" alt="mark" class="w-2.5 h-3.5 lg:w-4 lg:h-5">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <a href="#!" class="absolute -bottom-22 right-0 flex gap-5">
+                    <p class="text-gray-6060 opacity-75">View All</p>
+                    <img src="img/ico/arrowgray.svg" alt="arrowgray">
+                </a>
+            </div>
+            <div class="max-w-7xl h-px bg-gray-300 mx-auto mt-50"></div>
+        </section>
+        <section class="pt-25 ">
+            <div class="container-web flex flex-col items-center relative">
+                <h2 class="font-semibold text-[32px] lg:text-[45px]">Our Top <span
+                        class="text-main-purple">Dishes</span></h2>
+                <div class="flex mt-13 gap-7 flex-wrap justify-center">
+                    <div
+                        class="flex flex-col py-6 px-4 rounded-3xl overflow-hidden backgroundShadow2 relative w-[150px] h-[300px] lg:w-[224px] lg:h-[390px] hover:scale-103 transition ease-in-out">
+
+                        <div class="w-full flex items-center justify-center">
+                            <img src="img/dish1.png"
+                                class="w-[120px] h-[120px] lg:w-[160px] lg:h-[160px] object-contain">
+                        </div>
+
+                        <div class="px-2 lg:px-4 mt-2">
+                            <div class="px-3 py-1 bg-[#F7EDD0] rounded-[5px] w-fit">
+                                <p class="text-[8px] lg:text-[13px] text-[#DAA31A]">Healthy</p>
+                            </div>
+
+                            <h3 class="font-semibold text-[16px] lg:text-[23px] mt-1">Chicken Hell</h3>
+
+                            <div class="flex gap-2 items-center mt-1">
+                                <p class="text-gray-6060 opacity-75 text-[12px] lg:text-[16px]">24min</p>
+                                <div class="flex items-center gap-1">
+                                    <img src="img/ico/purplestar.svg" class="w-3 lg:w-4">
+                                    <p class="text-gray-6060 opacity-75 text-[12px] lg:text-[16px]">4.8</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center justify-between mt-3">
+                                <h2 class="font-bold text-[18px] lg:text-[25px] font-manrope">
+                                    $12<span class="text-gray-6060 text-[13px] lg:text-[18px]">.99</span>
+                                </h2>
+
+                                <div
+                                    class="w-8 h-8 lg:w-12 lg:h-12 bg-black rounded-full flex items-center justify-center">
+                                    <p class="text-white text-[18px] lg:text-[23px]">+</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <img src="img/ico/Heart.svg" class="w-5 h-5 absolute top-4 right-4">
+                    </div>
+                    <div
+                        class="flex flex-col py-6 px-4 rounded-3xl overflow-hidden backgroundShadow2 relative w-[150px] h-[300px] lg:w-[224px] lg:h-[390px] hover:scale-103 transition ease-in-out">
+
+                        <div class="w-full flex items-center justify-center">
+                            <img src="img/dish3.png"
+                                class="w-[120px] h-[120px] lg:w-[160px] lg:h-[160px] object-contain">
+                        </div>
+
+                        <div class="px-2 lg:px-4 mt-2">
+                            <div class="px-3 py-1 bg-[#94FFBF] rounded-[5px] w-fit">
+                                <p class="text-[8px] lg:text-[13px] text-[#309D5B]">Supreme</p>
+                            </div>
+
+                            <h3 class="font-semibold text-[16px] lg:text-[23px] mt-1">Swe Dish</h3>
+
+                            <div class="flex gap-2 items-center mt-1">
+                                <p class="text-gray-6060 opacity-75 text-[12px] lg:text-[16px]">34min</p>
+                                <div class="flex items-center gap-1">
+                                    <img src="img/ico/purplestar.svg" class="w-3 lg:w-4">
+                                    <p class="text-gray-6060 opacity-75 text-[12px] lg:text-[16px]">4.9</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center justify-between mt-3">
+                                <h2 class="font-bold text-[18px] lg:text-[25px] font-manrope">
+                                    $19<span class="text-gray-6060 text-[13px] lg:text-[18px]">.99</span>
+                                </h2>
+
+                                <div
+                                    class="w-8 h-8 lg:w-12 lg:h-12 bg-black rounded-full flex items-center justify-center">
+                                    <p class="text-white text-[18px] lg:text-[23px]">+</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <img src="img/ico/Heart.svg" class="w-5 h-5 absolute top-4 right-4">
+                    </div>
+
+
+                    <div
+                        class="flex flex-col py-6 px-4 rounded-3xl overflow-hidden backgroundShadow2 relative w-[150px] h-[300px] lg:w-[224px] lg:h-[390px] hover:scale-103 transition ease-in-out">
+
+                        <div class="w-full flex items-center justify-center">
+                            <img src="img/dish1.png"
+                                class="w-[120px] h-[120px] lg:w-[160px] lg:h-[160px] object-contain">
+                        </div>
+
+                        <div class="px-2 lg:px-4 mt-2">
+                            <div class="px-3 py-1 bg-[#F7EDD0] rounded-[5px] w-fit">
+                                <p class="text-[8px] lg:text-[13px] text-[#DAA31A]">Healthy</p>
+                            </div>
+
+                            <h3 class="font-semibold text-[16px] lg:text-[23px] mt-1">Chicken Hell</h3>
+
+                            <div class="flex gap-2 items-center mt-1">
+                                <p class="text-gray-6060 opacity-75 text-[12px] lg:text-[16px]">24min</p>
+                                <div class="flex items-center gap-1">
+                                    <img src="img/ico/purplestar.svg" class="w-3 lg:w-4">
+                                    <p class="text-gray-6060 opacity-75 text-[12px] lg:text-[16px]">4.8</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center justify-between mt-3">
+                                <h2 class="font-bold text-[18px] lg:text-[25px] font-manrope">
+                                    $12<span class="text-gray-6060 text-[13px] lg:text-[18px]">.99</span>
+                                </h2>
+
+                                <div
+                                    class="w-8 h-8 lg:w-12 lg:h-12 bg-black rounded-full flex items-center justify-center">
+                                    <p class="text-white text-[18px] lg:text-[23px]">+</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <img src="img/ico/Heart.svg" class="w-5 h-5 absolute top-4 right-4">
+                    </div>
+
+
+                    <div
+                        class="flex flex-col py-6 px-4 rounded-3xl overflow-hidden backgroundShadow2 relative w-[150px] h-[300px] lg:w-[224px] lg:h-[390px] hover:scale-103 transition ease-in-out">
+
+                        <div class="w-full flex items-center justify-center">
+                            <img src="img/dish2.png"
+                                class="w-[120px] h-[120px] lg:w-[160px] lg:h-[160px] object-contain">
+                        </div>
+
+                        <div class="px-2 lg:px-4 mt-2">
+                            <div class="px-3 py-1 bg-[#F7C5BA] rounded-[5px] w-fit">
+                                <p class="text-[8px] lg:text-[13px] text-[#FB471D]">Trending</p>
+                            </div>
+
+                            <h3 class="font-semibold text-[16px] lg:text-[23px] mt-1">Swe Dish</h3>
+
+                            <div class="flex gap-2 items-center mt-1">
+                                <p class="text-gray-6060 opacity-75 text-[12px] lg:text-[16px]">34min</p>
+                                <div class="flex items-center gap-1">
+                                    <img src="img/ico/purplestar.svg" class="w-3 lg:w-4">
+                                    <p class="text-gray-6060 opacity-75 text-[12px] lg:text-[16px]">4.9</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center justify-between mt-3">
+                                <h2 class="font-bold text-[18px] lg:text-[25px] font-manrope">
+                                    $19<span class="text-gray-6060 text-[13px] lg:text-[18px]">.99</span>
+                                </h2>
+
+                                <div
+                                    class="w-8 h-8 lg:w-12 lg:h-12 bg-black rounded-full flex items-center justify-center">
+                                    <p class="text-white text-[18px] lg:text-[23px]">+</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <img src="img/ico/Heart.svg" class="w-5 h-5 absolute top-4 right-4">
+                    </div>
+                    <div
+                        class="hidden md:flex flex-col py-6 px-4 rounded-3xl overflow-hidden backgroundShadow2 relative w-[160px] h-[300px] lg:w-[224px] lg:h-[390px] hover:scale-103 transition ease-in-out">
+
+                        <div class="w-full flex items-center justify-center">
+                            <img src="img/dish1.png"
+                                class="w-[120px] h-[120px] lg:w-[160px] lg:h-[160px] object-contain">
+                        </div>
+
+                        <div class="px-2 lg:px-4 mt-2">
+                            <div class="px-3 py-1 bg-[#F7EDD0] rounded-[5px] w-fit">
+                                <p class="text-[8px] lg:text-[13px] text-[#DAA31A]">Healthy</p>
+                            </div>
+
+                            <h3 class="font-semibold text-[16px] lg:text-[23px] mt-1">Chicken Hell</h3>
+
+                            <div class="flex gap-2 items-center mt-1">
+                                <p class="text-gray-6060 opacity-75 text-[12px] lg:text-[16px]">24min</p>
+                                <div class="flex items-center gap-1">
+                                    <img src="img/ico/purplestar.svg" class="w-3 lg:w-4">
+                                    <p class="text-gray-6060 opacity-75 text-[12px] lg:text-[16px]">4.8</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center justify-between mt-3">
+                                <h2 class="font-bold text-[18px] lg:text-[25px] font-manrope">
+                                    $12<span class="text-gray-6060 text-[13px] lg:text-[18px]">.99</span>
+                                </h2>
+
+                                <div
+                                    class="w-8 h-8 lg:w-12 lg:h-12 bg-black rounded-full flex items-center justify-center">
+                                    <p class="text-white text-[18px] lg:text-[23px]">+</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <img src="img/ico/Heart.svg" class="w-5 h-5 absolute top-4 right-4">
+                    </div>
+
+                </div>
+                <a href="#!" class="absolute -bottom-22 right-0 flex gap-5">
+                    <p class="text-gray-6060 opacity-75">View All</p>
+                    <img src="img/ico/arrowgray.svg" alt="arrowgray">
+                </a>
+            </div>
+            <div class="max-w-7xl h-px bg-gray-300 mx-auto mt-50"></div>
+        </section>
+        <section class="bg-white pt-25 flex flex-col items-center justify-center  gap-25">
+            <div class="relative">
+                <h2 class="font-semibold text-[32px] lg:text-[45px] text-center">Frequently Asked <br>
+                    <span class="text-main-purple">Questions</span>
+                </h2>
+                <img src="img/ico/light.svg" alt="light" class="absolute -top-5 -right-6 sm:-right-10 md:-right-15 rotate-190 w-6 h-6 md:w-10 md:h-10 ">
+
+            </div>
+
+            <div class="w-full max-w-4xl bg-white rounded-2xl px-8">
+                <div class="border-b border-gray-200 py-6">
+                    <button onclick="toggle(this)" class="w-full flex items-center justify-between text-left">
+                        <span class="text-[15px] lg:text-[18px] font-semibold text-gray-800">How long does delivery take?</span>
+                        <span
+                            class="plus shrink-0 ml-4 w-6 lg:w-10 h-6 lg:h-10 rounded-full bg-main-purple flex items-center justify-center text-white text-xl lg:text-2xl transition-transform duration-300">+</span>
+                    </button>
+                    <div class="answer overflow-hidden transition-all duration-300 max-h-0">
+                        <p class="mt-3 text-gray-500 text-[14px] lg:text-[16px] leading-relaxed">Delivery typically takes 30–45 minutes
+                            depending on your location and current demand.</p>
+                    </div>
+                </div>
+                <div class="border-b border-gray-200 py-6">
+                    <button onclick="toggle(this)" class="w-full flex items-center justify-between text-left">
+                        <span class="text-[15px] lg:text-[18px] font-semibold text-gray-800">How Does It Work?</span>
+                        <span
+                            class="plus shrink-0 ml-4 w-6 lg:w-10 h-6 lg:h-10 rounded-full bg-main-purple flex items-center justify-center text-white text-xl lg:text-2xl transition-transform duration-300">+</span>
+                    </button>
+                    <div class="answer overflow-hidden transition-all duration-300 max-h-0">
+                        <p class="mt-3 text-gray-500 text-[14px] lg:text-[16px] leading-relaxed">Simply browse our menu, add items to
+                            your
+                            cart, and place your order. We handle the rest!</p>
+                    </div>
+                </div>
+                <div class="border-b border-gray-200 py-6">
+                    <button onclick="toggle(this)" class="w-full flex items-center justify-between text-left">
+                        <span class="text-[15px] lg:text-[18px] font-semibold text-gray-800">How does your food delivery service
+                            work?</span>
+                        <span
+                            class="plus shrink-0 ml-4 w-6 lg:w-10 h-6 lg:h-10 rounded-full bg-main-purple flex items-center justify-center text-white text-xl lg:text-2xl transition-transform duration-300">+</span>
+                    </button>
+                    <div class="answer overflow-hidden transition-all duration-300 max-h-0">
+                        <p class="mt-3 text-gray-500 text-[14px] lg:text-[16px] leading-relaxed">We partner with local restaurants to
+                            bring
+                            fresh meals right to your door. Track your order in real time.</p>
+                    </div>
+                </div>
+                <div class="border-b border-gray-200 py-6">
+                    <button onclick="toggle(this)" class="w-full flex items-center justify-between text-left">
+                        <span class="text-[15px] lg:text-[18px] font-semibold text-gray-800">What payment options do you accept?</span>
+                        <span
+                            class="plus shrink-0 ml-4 w-6 lg:w-10 h-6 lg:h-10 rounded-full bg-main-purple flex items-center justify-center text-white text-xl lg:text-2xl transition-transform duration-300">+</span>
+                    </button>
+                    <div class="answer overflow-hidden transition-all duration-300 max-h-0">
+                        <p class="mt-3 text-gray-500 text-[14px] lg:text-[16px] leading-relaxed">We accept Visa, Mastercard, Apple Pay,
+                            Google Pay, and cash on delivery.</p>
+                    </div>
+                </div>
+                <div class="border-b border-gray-200 py-6">
+                    <button onclick="toggle(this)" class="w-full flex items-center justify-between text-left">
+                        <span class="text-[15px] lg:text-[18px] font-semibold text-gray-800">Do you offer discounts or
+                            promotions?</span>
+                        <span
+                            class="plus shrink-0 ml-4 w-6 lg:w-10 h-6 lg:h-10 rounded-full bg-main-purple flex items-center justify-center text-white text-xl lg:text-2xl transition-transform duration-300">+</span>
+                    </button>
+                    <div class="answer overflow-hidden transition-all duration-300 max-h-0">
+                        <p class="mt-3 text-gray-500 text-[14px] lg:text-[16px] leading-relaxed">Yes! Sign up for our newsletter and
+                            get
+                            15%
+                            off your first order. Check the app for daily deals.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="mt-54 bg-[#EAEAEA] pb-20">
+        <div class="container-web pt-10 md:pt-24">
+            <div class="flex flex-col gap-10">
+                <div class="flex md:flex-row flex-col justify-between items-startmd:items-center md:gap-0 gap-7">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <img src="img/ico/Logo.svg" alt="">
+                        <h2 class=" font-semibold text-main-purple text-[18px]">eatly</h2>
+                    </a>
+                    <nav class="flex md:flex-row flex-col gap-3 md:gap-13 text-[13px] lg:text-[18px]">
+                        <a href="menu.html" class="font-inter font-medium text-gray-6060">Menu</a>
+                        <a href="blog.html" class="font-inter font-medium text-gray-6060">Blog</a>
+                        <a href="pricing.html" class="font-inter font-medium text-gray-6060">Pricing</a>
+                        <a href="contact.html" class="font-inter font-medium text-gray-6060">Contact</a>
+                    </nav>
+                </div>
+                <div class="max-w-7xl h-px bg-gray-300"></div>
+                <div
+                    class="flex md:flex-row flex-col-reverse md:items-start items-center md:gap-0 gap-5 justify-between">
+                    <p class="lg:text-[18px] text-[12px]">© 2023 EATLY All Rights Reserved.</p>
+                    <div class="flex gap-13">
+                        <img src="img/ico/media1.svg" alt="instagram" class="w-4 h-4 md:w-full md:h-ful">
+                        <img src="img/ico/media2.svg" alt="linkedin" class="w-4 h-4 md:w-full md:h-ful">
+                        <img src="img/ico/media3.svg" alt="facebook" class="w-4 h-4 md:w-full md:h-ful">
+                        <img src="img/ico/media4.svg" alt="twitter" class="w-4 h-4 md:w-full md:h-full">
+                    </div>
+                </div>
+            </div>
+    </footer>
+
+    <script>
+        function toggle(btn) {
+            const answer = btn.nextElementSibling;
+            const plus = btn.querySelector('.plus');
+            const isOpen = answer.style.maxHeight !== '0px' && answer.style.maxHeight !== '';
+
+            document.querySelectorAll('.answer').forEach(a => a.style.maxHeight = '0px');
+            document.querySelectorAll('.plus').forEach(p => p.style.transform = 'rotate(0deg)');
+
+            if (!isOpen) {
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+                plus.style.transform = 'rotate(45deg)';
+            }
+        }
+    </script>
+
+</body>
+
+</html>

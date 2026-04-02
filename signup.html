@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="dist/output.css">
+</head>
+
+<body class="font-poppins">
+    <header class="block lg:hidden">
+        <div class="container-web pt-12 flex items-center justify-between">
+            <div class="flex items-center gap-27">
+                <a href="index.html" class="flex items-center gap-3">
+                    <img src="img/ico/Logo.svg" alt="logo" class="w-8 h-7.5 lg:w-11 lg:h-10">
+                    <h2 class=" font-semibold text-main-purple text-[15px] lg:text-[18px]">eatly</h2>
+                </a>
+                <nav class="md:flex gap-13 text-[13px] lg:text-[18px] hidden">
+                    <a href="menu.html" class="font-inter font-medium text-gray-6060">Menu</a>
+                    <a href="blog.html" class="font-inter font-medium text-gray-6060">Blog</a>
+                    <a href="pricing.html" class="font-inter font-medium text-gray-6060">Pricing</a>
+                    <a href="contact.html" class="font-inter font-medium text-gray-6060">Contact</a>
+                </nav>
+            </div>
+            <div class="hidden md:flex gap-2">
+                <a href="signup.html"
+                    class="px-4.5 lg:px-6 py-4 font-inter font-bold text-gray-6060 text-[15px] lg:text-[18px]">Login</a>
+                <a href="signup.html"
+                    class="px-4.5 lg:px-6 py-4 font-inter font-bold bg-main-purple text-white rounded-2xl text-[15px] lg:text-[18px]">Sign
+                    up</a>
+            </div>
+            <div class="md:hidden block">
+                <img src="/img/ico/hamburger.png" alt="hamburger" class="w-8 h-6">
+            </div>
+        </div>
+        <div class="max-w-7xl h-px bg-gray-300 mx-auto mt-6"></div>
+    </header>
+    <section class="flex flex-col lg:flex-row lg:min-h-screen relative">
+        <a href="index.html">
+            <img src="img/ico/Logo.svg" alt="logo" class="absolute top-10 left-10 lg:block hidden">
+        </a>
+        <div class="w-full lg:w-1/2 flex justify-center items-center bg-white px-6 py-10 lg:py-0">
+            <div class="w-full max-w-[400px]">
+                <h2 class="text-[28px] lg:text-[35px] font-semibold text-center mb-6 lg:mb-8">
+                    Sign Up To eatly
+                </h2>
+                <div class="flex gap-4 justify-center mb-5 lg:mb-6">
+                    <div class="bg-gray-100 px-10 lg:px-20 py-2.5 rounded-xl cursor-pointer">
+                        <img src="img/ico/google.svg" class="w-5 lg:w-6">
+                    </div>
+                    <div class="bg-gray-100 px-10 lg:px-20 py-2.5 rounded-xl cursor-pointer">
+                        <img src="img/ico/apple.svg" class="w-5 lg:w-6">
+                    </div>
+                </div>
+                <p class="text-center text-[16px] lg:text-[20px] text-gray-400 mb-5 lg:mb-6">
+                    OR
+                </p>
+                <div class="flex flex-col gap-3 lg:gap-4">
+                    <input type="text" placeholder="FULL NAME"
+                        class="bg-gray-100 py-4 lg:py-6 px-5 lg:px-7 rounded-xl outline-none text-[15px] lg:text-[17px]">
+
+                    <input type="email" placeholder="EMAIL"
+                        class="bg-gray-100 py-4 lg:py-6 px-5 lg:px-7 rounded-xl outline-none text-[15px] lg:text-[17px]">
+
+                    <input type="password" placeholder="PASSWORD"
+                        class="bg-gray-100 py-4 lg:py-6 px-5 lg:px-7 rounded-xl outline-none text-[15px] lg:text-[17px]">
+                </div>
+                <button class="w-full bg-main-purple text-white py-3 lg:py-4 rounded-xl mt-5 lg:mt-6 font-semibold hover:scale-103 transition cursor-pointer">
+                    SIGN UP
+                </button>
+                <p class="text-center mt-5 lg:mt-6 text-[14px] lg:text-[18px]">
+                    Already Have An Account?
+                    <span class="text-main-purple font-semibold cursor-pointer">
+                        Log In
+                    </span>
+                </p>
+                <div class="flex justify-between text-[12px] lg:text-[16px] text-gray-400 mt-10 lg:mt-16">
+                    <p>Privacy Policy</p>
+                    <p>Copyright 2022</p>
+                </div>
+            </div>
+        </div>
+        <div
+            class="lg:w-1/2 bg-main-purple hidden lg:flex flex-col justify-center items-center relative text-white overflow-hidden py-12 lg:py-0">
+            <div class="relative flex justify-center">
+                <img src="img/plate.png" class="w-[220px] sm:w-[260px] md:w-[300px] lg:w-[360px] z-10">
+                <div class="absolute -top-6 right-0 sm:-right-10 lg:-top-10 lg:-right-10 
+                        bg-white text-black px-3 lg:px-4 py-1 rounded-2xl shadow-2xl 
+                        flex items-center gap-2 lg:gap-3 z-10">
+                    <img src="img/plate2.png" class="w-10 h-10 lg:w-20 lg:h-20 rounded-full">
+                    <div>
+                        <h3 class="font-semibold text-[12px] lg:text-[16px]">
+                            Chicken Hell
+                        </h3>
+                        <p class="text-[8px] lg:text-[10px] text-gray-500">
+                            On The Way
+                        </p>
+                    </div>
+                    <p class="text-[10px] lg:text-[13px] text-gray-600 ml-2 lg:ml-4">
+                        3:09 PM
+                    </p>
+                </div>
+                <img src="img/Graph.svg" class="absolute bottom-0 left-0 w-[100px] sm:w-[120px] lg:w-[160px] z-10">
+            </div>
+            <h2 class="text-[24px] sm:text-[30px] lg:text-[40px] font-semibold mt-8 lg:mt-10 text-center px-4">
+                Find Foods With Love
+            </h2>
+            <p
+                class="text-center max-w-[320px] sm:max-w-[420px] opacity-75 mt-3 lg:mt-4 text-[12px] lg:text-[14px] px-4">
+                Eatly Is The Food Delivery Dashboard And Having More Than 2K+ Dishes Including Asian, Chinese, Italians
+                And Many More.
+                Our Dashboard Helps You To Manage Orders And Money.
+            </p>
+        </div>
+    </section>
+    <footer class="block lg:hidden bg-[#EAEAEA] pb-20 mt-20">
+        <div class="container-web pt-10 md:pt-24">
+            <div class="flex flex-col gap-10">
+                <div class="flex md:flex-row flex-col justify-between items-startmd:items-center md:gap-0 gap-7">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <img src="img/ico/Logo.svg" alt="Logo">
+                        <h2 class=" font-semibold text-main-purple text-[18px]">eatly</h2>
+                    </a>
+                    <nav class="flex md:flex-row flex-col gap-3 md:gap-13 text-[13px] lg:text-[18px]">
+                        <a href="menu.html" class="font-inter font-medium text-gray-6060">Menu</a>
+                        <a href="blog.html" class="font-inter font-medium text-gray-6060">Blog</a>
+                        <a href="pricing.html" class="font-inter font-medium text-gray-6060">Pricing</a>
+                        <a href="contact.html" class="font-inter font-medium text-gray-6060">Contact</a>
+                    </nav>
+                </div>
+                <div class="max-w-7xl h-px bg-gray-300"></div>
+                <div
+                    class="flex md:flex-row flex-col-reverse md:items-start items-center md:gap-0 gap-5 justify-between">
+                    <p class="lg:text-[18px] text-[12px]">© 2023 EATLY All Rights Reserved.</p>
+                    <div class="flex gap-13">
+                        <img src="img/ico/media1.svg" alt="instagram" class="w-4 h-4 md:w-full md:h-ful">
+                        <img src="img/ico/media2.svg" alt="linkedin" class="w-4 h-4 md:w-full md:h-ful">
+                        <img src="img/ico/media3.svg" alt="facebook" class="w-4 h-4 md:w-full md:h-ful">
+                        <img src="img/ico/media4.svg" alt="twitter" class="w-4 h-4 md:w-full md:h-full">
+                    </div>
+                </div>
+            </div>
+    </footer>
+</body>
+
+</html>

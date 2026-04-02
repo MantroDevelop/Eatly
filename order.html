@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dist/output.css">
+</head>
+
+<body class="font-poppins">
+    <header>
+        <div class="container-web pt-12 flex items-center justify-between">
+            <div class="flex items-center gap-27">
+                <a href="index.html" class="flex items-center gap-3">
+                    <img src="img/ico/Logo.svg" alt="logo" class="w-8 h-7.5 lg:w-11 lg:h-10">
+                    <h2 class=" font-semibold text-main-purple text-[15px] lg:text-[18px]">eatly</h2>
+                </a>
+                <nav class="md:flex gap-13 text-[13px] lg:text-[18px] hidden">
+                    <a href="menu.html" class="font-inter font-medium text-gray-6060">Menu</a>
+                    <a href="blog.html" class="font-inter font-medium text-gray-6060">Blog</a>
+                    <a href="pricing.html" class="font-inter font-medium text-gray-6060">Pricing</a>
+                    <a href="contact.html" class="font-inter font-medium text-gray-6060">Contact</a>
+                </nav>
+            </div>
+            <div class="hidden md:flex gap-2">
+                <a href="signup.html"
+                    class="px-4.5 lg:px-6 py-4 font-inter font-bold text-gray-6060 text-[15px] lg:text-[18px]">Login</a>
+                <a href="signup.html"
+                    class="px-4.5 lg:px-6 py-4 font-inter font-bold bg-main-purple text-white rounded-2xl text-[15px] lg:text-[18px]">Sign
+                    up</a>
+            </div>
+            <div class="md:hidden block">
+                <img src="/img/ico/hamburger.png" alt="hamburger" class="w-8 h-6"> 
+            </div>
+        </div>
+        <div class="max-w-7xl h-px bg-gray-300 mx-auto mt-6"></div>
+    </header>
+    <main>
+        <section class="pt-20">
+            <div class="container-web flex flex-col items-center">
+                <div class="flex flex-col items-center">
+                    <img src="img/map.jpg" alt="map" class="w-full h-full">
+                    <div class="flex flex-col max-w-80 lg:max-w-115 w-full rounded-2xl overflow-hidden shadow-2xl relative -mt-10 lg:-mt-40 bg-white">
+                        <div class="bg-black flex gap-5 p-5">
+                            <img src="img/author2.png" alt="author2" class="w-[40px] h-[40px] lg:w-[60px] lg:h-[60px]">
+                            <div class="flex flex-col">
+                                <h2 class="text-white font-medium text-[16px] lg:text-[22px]">David Smith</h2>
+                                <p class="text-gray-6060 text-[11px] lg:text-[16px]">Food Rider</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-7 px-5 py-8">
+                            <div class="flex flex-col gap-9.5">
+                                <img src="img/ico/location.svg" alt="location" class="w-7.5 h-7.5 lg:w-10.5 lg:h-10.5">
+                                <img src="img/ico/time.svg" alt="time" class="w-7.5 h-7.5 lg:w-10.5 lg:h-10.5">
+                            </div>
+                            <div class="flex flex-col gap-7">
+                                <div>
+                                    <p class="text-[8px] lg:text-[12px] text-gray-6060">Your Address</p>
+                                    <h2 class="text-[9px] lg:text-[13px]">Horizenal Road Stree 1178 <br>California, USA</h2>
+                                </div>
+                                <div>
+                                    <p class="text-[8px] lg:text-[12px] text-gray-6060">Delivery Time</p>
+                                    <h2 class="text-[9px] lg:text-[13px]">15 Minutes</h2>
+                                </div>
+                            </div>
+                            <div class="absolute right-5 bottom-3 px-8 py-2.5 bg-main-purple text-white rounded-xl text-[11px] lg:text-[15.5px]">Pending</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pt-40">
+            <div class="container-web flex flex-col items-center gap-5">
+                <div class="dish-card flex bg-white max-w-110 lg:max-w-170 w-full shadow-2xl p-3 justify-between relative rounded-2xl" data-price="12.99" data-count="3">
+                    <img src="img/ico/light.svg" alt="light" class="-top-10 -right-5 sm:-right-10 rotate-190 absolute w-6 h-6 lg:w-10 lg:h-10 ">
+                    <div class="flex gap-3 items-center">
+                        <img src="img/dishwithoutbg2.png" alt="dish" class="w-17 h-17 lg:w-23 lg:h-23">
+                        <div>
+                            <h2 class="text-[13px] sm:text-[16px] lg:text-[22px] font-semibold">Chicken Hell</h2>
+                            <p class="text-[11px] sm:text-[13px] lg:text-[18px] font-semibold">$12.99</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center pr-4">
+                        <div class="flex flex-col items-center gap-2">
+                            <div class="flex items-center gap-1 sm:gap-3">
+                                <button class="w-5.5 h-5.5 lg:w-11 lg:h-11 rounded-[5px] lg:rounded-2xl border-2 border-gray-200 flex items-center justify-center text-2xl font-light text-gray-700 hover:border-gray-400 transition-colors" onclick="change(this,-1)">−</button>
+                                <span class="count text-[15px] lg:text-[22px] font-semibold w-6 text-center">03</span>
+                                <button class="w-5.5 h-5.5 lg:w-11 lg:h-11 rounded-[5px] lg:rounded-2xl bg-gray-800 flex items-center justify-center text-2xl text-white hover:bg-gray-700 transition-colors" onclick="change(this,1)">+</button>
+                            </div>
+                            <p class="total text-[11px] lg:text-[17.5px] font-semibold">$38.97</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dish-card flex bg-white max-w-110 lg:max-w-170 w-full shadow-2xl p-3 justify-between rounded-2xl" data-price="19.99" data-count="1">
+                    <div class="flex gap-3 items-center">
+                        <img src="img/dishwithoutbg.png" alt="dish" class="w-17 h-17 lg:w-23 lg:h-23">
+                        <div>
+                            <h2 class="text-[13px] sm:text-[16px] lg:text-[22px] font-semibold">Swe Dish</h2>
+                            <p class="text-[11px] sm:text-[13px] lg:text-[18px] font-semibold">$19.99</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center pr-4">
+                        <div class="flex flex-col items-center gap-2">
+                            <div class="flex items-center gap-1 sm:gap-3">
+                                <button class="w-5.5 h-5.5 lg:w-11 lg:h-11 rounded-[5px] lg:rounded-2xl border-2 border-gray-200 flex items-center justify-center text-2xl font-light text-gray-700 hover:border-gray-400 transition-colors" onclick="change(this,-1)">−</button>
+                                <span class="count text-[15px] lg:text-[22px] font-semibold w-6 text-center">01</span>
+                                <button class="w-5.5 h-5.5 lg:w-11 lg:h-11 rounded-[5px] lg:rounded-2xl bg-gray-800 flex items-center justify-center text-2xl text-white hover:bg-gray-700 transition-colors" onclick="change(this,1)">+</button>
+                            </div>
+                            <p class="total text-[11px] lg:text-[17.5px] font-semibold">$19.99</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex w-full max-w-120 lg:max-w-170 mt-4 rounded-2xl overflow-hidden">
+                    <div class="flex items-center gap-3 bg-gray-100 flex-1 px-4 py-4">
+                        <img src="img/ico/ticket.svg" alt="ticket">
+                        <input type="text" placeholder="Apply Coupon" class="bg-transparent outline-none text-gray-400 text-[13px] lg:text-[16px] w-full">
+                    </div>
+                    <button class="bg-main-purple text-white text-[13px] lg:text-[18px] px-8 cursor-pointer font-medium">Apply</button>
+                </div>
+                <div class="w-full max-w-120 lg:max-w-170 mt-4 flex flex-col gap-4">
+                    <div class="flex justify-between items-center">
+                        <p class="text-gray-500 text-[14px] lg:text-[16px]">Subtotal</p>
+                        <p id="subtotal" class="text-gray-500 text-[14px] lg:text-[16px]">$58.96</p>
+                    </div>
+                    <div class="border-t border-dashed border-gray-300"></div>
+                    <div class="flex justify-between items-center">
+                        <p class="text-gray-500 text-[14px] lg:text-[16px]">Delivery</p>
+                        <p class="text-gray-500 text-[14px] lg:text-[16px]">$3.59</p>
+                    </div>
+                    <div class="border-t border-dashed border-gray-300"></div>
+                    <div class="flex justify-between items-center">
+                        <p class="text-[18px] lg:text-[25px] font-semibold">Total</p>
+                        <p id="total-final" class="text-[18px] lg:text-[25px] font-semibold">$62.55</p>
+                    </div>
+                </div>
+                <button class="w-full max-w-120 lg:max-w-170 mt-6 py-5 bg-main-purple text-white text-[14px] lg:text-[20px] rounded-3xl cursor-pointer font-semibold hover:scale-103 transition ease-in-out">
+                    Review Payment
+                </button>
+            </div>
+        </section>
+        <section class="pt-50">
+            <div class="container-web flex flex-col justify-center items-center">
+                <div class="relative">
+                    <img src="img/PurpleBg.jpg" alt="" class="w-80 h-64 md:w-full md:h-full object-cover rounded-2xl">
+                    <h2 class="font-extrabold text-[41px] md:text-[50px] lg:text-[70px] absolute top-7 left-15 sm:left-18 md:top-5 lg:top-9 md:left-16 text-white">GET 50%</h2>
+                    <div
+                        class="flex items-center w-full max-w-[260px] md:max-w-[312px] lg:max-w-[440px] p-1.5 bg-white rounded-full shadow-md absolute top-25 left-7 sm:left-8 lg:top-37 md:left-16">
+                        <input type="email" placeholder="Enter Your Email Address"
+                            class="flex-1 min-w-0 px-5 py-2 text-gray-500 bg-transparent border-none outline-none placeholder:text-gray-400 text-[10px] md:text-[11px] lg:text-[16px]" />
+                        <button
+                            class="px-4 md:px-8 py-3.5 font-bold text-[11px] lg:text-sm tracking-wide text-white transition-all bg-[#7B68EE] rounded-full hover:bg-[#6a5acd] active:scale-95 shrink-0">
+                            SUBSCRIBE
+                        </button>
+                    </div>
+                    <img src="img/dishwithoutbg.png" alt="dish" class="absolute right-17 -bottom-25 lg:right-35 md:-bottom-20 lg:w-70 lg:h-70 md:w-50 md:h-50 w-40 h-40">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="mt-54 bg-[#EAEAEA] pb-20">
+        <div class="container-web pt-10 md:pt-24">
+            <div class="flex flex-col gap-10">
+                <div class="flex md:flex-row flex-col justify-between items-startmd:items-center md:gap-0 gap-7">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <img src="img/ico/Logo.svg" alt="">
+                        <h2 class=" font-semibold text-main-purple text-[18px]">eatly</h2>
+                    </a>
+                    <nav class="flex md:flex-row flex-col gap-3 md:gap-13 text-[13px] lg:text-[18px]">
+                        <a href="menu.html" class="font-inter font-medium text-gray-6060">Menu</a>
+                        <a href="blog.html" class="font-inter font-medium text-gray-6060">Blog</a>
+                        <a href="pricing.html" class="font-inter font-medium text-gray-6060">Pricing</a>
+                        <a href="contact.html" class="font-inter font-medium text-gray-6060">Contact</a>
+                    </nav>
+                </div>
+                <div class="max-w-7xl h-px bg-gray-300"></div>
+                <div class="flex md:flex-row flex-col-reverse md:items-start items-center md:gap-0 gap-5 justify-between">
+                    <p class="lg:text-[18px] text-[12px]">© 2023 EATLY All Rights Reserved.</p>
+                    <div class="flex gap-13">
+                        <img src="img/ico/media1.svg" alt="instagram" class="w-4 h-4 md:w-full md:h-ful">
+                        <img src="img/ico/media2.svg" alt="linkedin" class="w-4 h-4 md:w-full md:h-ful">
+                        <img src="img/ico/media3.svg" alt="facebook" class="w-4 h-4 md:w-full md:h-ful">
+                        <img src="img/ico/media4.svg" alt="twitter" class="w-4 h-4 md:w-full md:h-full">
+                    </div>
+                </div>
+            </div>
+    </footer>
+    <script>
+        const DELIVERY = 3.59;
+
+        function change(btn, val) {
+            const card = btn.closest('.dish-card');
+            const price = parseFloat(card.dataset.price);
+            let count = parseInt(card.dataset.count);
+
+            count = Math.max(0, count + val);
+            card.dataset.count = count;
+
+            card.querySelector('.count').textContent = String(count).padStart(2, '0');
+            card.querySelector('.total').textContent = '$' + (price * count).toFixed(2);
+
+            updateSummary();
+        }
+
+        function updateSummary() {
+            let subtotal = 0;
+            document.querySelectorAll('.dish-card').forEach(card => {
+                subtotal += parseFloat(card.dataset.price) * parseInt(card.dataset.count);
+            });
+
+            document.getElementById('subtotal').textContent = '$' + subtotal.toFixed(2);
+            document.getElementById('total-final').textContent = '$' + (subtotal + DELIVERY).toFixed(2);
+        }
+    </script>
+</body>
+
+</html>

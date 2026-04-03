@@ -1015,10 +1015,6 @@
     border-style: var(--tw-border-style);
     border-width: 2px;
   }
-  .border-4 {
-    border-style: var(--tw-border-style);
-    border-width: 4px;
-  }
   .border-t {
     border-top-style: var(--tw-border-style);
     border-top-width: 1px;
@@ -1716,16 +1712,6 @@
       color: var(--color-gray-400);
     }
   }
-  .hover\:scale-1 {
-    &:hover {
-      @media (hover: hover) {
-        --tw-scale-x: 1%;
-        --tw-scale-y: 1%;
-        --tw-scale-z: 1%;
-        scale: var(--tw-scale-x) var(--tw-scale-y);
-      }
-    }
-  }
   .hover\:scale-103 {
     &:hover {
       @media (hover: hover) {
@@ -1788,13 +1774,6 @@
     &:hover {
       @media (hover: hover) {
         color: var(--color-main-purple);
-      }
-    }
-  }
-  .hover\:opacity-75 {
-    &:hover {
-      @media (hover: hover) {
-        opacity: 75%;
       }
     }
   }
@@ -3496,37 +3475,6 @@
 }
 .bg {
   background: url("/img/PurpleBg.jpg");
-}
-.slider {
-  -webkit-appearance: none;
-  height: 10px;
-  border-radius: 999px;
-  background: #6C5FBC;
-  outline: none;
-}
-.slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  background: #6C5FBC;
-  border: 4px solid #BBB6D7;
-  cursor: pointer;
-}
-.shadowChoicer {
-  box-shadow: 10px 25px 60px 0 rgba(0, 90, 100, 0.2);
-}
-.testimonials-swiper {
-  overflow: hidden;
-}
-.swiper-scrollbar {
-  background: #E0DDF5;
-  border-radius: 9999px;
-  height: 8px;
-}
-.swiper-scrollbar-drag {
-  background: var(--color-main-purple, #7C3AED);
-  border-radius: 9999px;
 }
 @property --tw-rotate-x {
   syntax: "*";
